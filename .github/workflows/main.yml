@@ -1,1 +1,24 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
 
+# 1. Course Name Variable
+name: Deploy HTML Files to AppService - CMST385
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v1
+      with:
+        # 2. App Name Variable or it would be cmst385-UMGC-jlee518
+        app-name: 'cmst385-jlee518'
+        slot-name: 'production'
+        # 3. Publish Profile Variable
+        publish-profile: ${{ secrets.AppServiceCMST385 }}
