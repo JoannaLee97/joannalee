@@ -13,5 +13,6 @@ body {
 }
 
 .quote-text:hover {
-    text-decoration: underline; 
+    color: blue; /* Changes the text to blue */
+    text-decoration: none; /* Ensures the underline stays hidden */
 }
