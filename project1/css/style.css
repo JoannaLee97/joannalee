@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 50px;
+}
+
+/* Custom text block styling */
+.quote-text {
+    color: #D40000; 
+    text-decoration: none; 
+    transition: all 0.15s ease-in-out; /* Fast hover animation */
+}
+
+.quote-text:hover {
+    text-decoration: underline; 
+}
