@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* You can change this to #F6F1EB if you want that warmer portfolio color! */
+    padding: 50px 40px; /* Adds space at the top and sides so text doesn't touch the edges */
+    line-height: 1.6; /* Adds breathing room between lines of text */
+    color: #333333; /* A dark gray is slightly easier on the eyes than pure black */
+}
+
+/* This centers ONLY your main Project Proposal heading */
+h1 {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+/* This adds a little space below your smaller headings */
+h2 {
+    margin-top: 30px;
+    color: #222222;
+}
+
+/* Custom text block styling from earlier */
+.quote-text {
+    color: #D40000; 
+    text-decoration: none; 
+    transition: all 0.15s ease-in-out; 
+}
+
+.quote-text:hover {
+    color: blue; 
+    text-decoration: none; 
+}
