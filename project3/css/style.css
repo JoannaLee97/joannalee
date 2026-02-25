@@ -114,7 +114,7 @@ main {
 }
 
 .featured-image figcaption {
-    text-align: left; /
+    text-align: left; 
     font-size: 11px;
     color: #888888;
     margin-top: 8px;
@@ -261,4 +261,5 @@ main {
     margin-top: 8px; 
     font-style: italic;
     letter-spacing: 0.5px;
+
 }
