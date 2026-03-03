@@ -440,27 +440,30 @@ p {
 /*FLOATING TEXT OVER IMAGE STYLING*/
 
 .image-overlay-container {
-    position: relative; 
+    position: relative;
     width: 100%;
-    max-width: none; 
-    display: block;
-    line-height: 0; 
+    height: 80vh; 
+    overflow: hidden; 
+    line-height: 0;
 }
+
 .full-landing-img {
     width: 100%;
-    max-width: none; 
-    height: auto;
+    height: 100%; 
+    object-fit: cover; 
     display: block;
 }
+
 .overlay-text {
     position: absolute; 
-    z-index: 10; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    z-index: 10;
     text-align: center;
-    width: 100%; 
+    width: 100%;
 }
+
 .floating-title {
     color: #333333; 
     font-size: 80px; 
@@ -477,4 +480,36 @@ p {
     margin-top: 50px; 
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.floating-title {
+    color: #333333; 
+    font-size: 80px; 
+    font-weight: bold;
+    text-transform: lowercase; 
+    letter-spacing: 3px; 
+    margin: 0;
+    line-height: 1.2; 
+}
+
+.hero .full-landing-img {
+    width: 100%;
+    height: 80vh; 
+    object-fit: cover; 
+    display: block;
+}
+
+/*port*/
+.shift-left {
+    display: inline-block;
+    margin-right: 120px; 
+}
+
+.overlay-text-right {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: right;
 }
